@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\sanaraya\source\repos\new\APIComm\APIComms\PingAPI\Publish\Prod</_PublishTargetUrl>
+    <History>True|2024-02-28T10:20:25.8519602Z;True|2024-02-28T15:43:17.6780717+05:30;True|2024-02-28T12:58:09.6462847+05:30;True|2024-02-28T00:57:20.2075653+05:30;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

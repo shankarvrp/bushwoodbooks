@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: pong
+ namespace: pingpong
+spec:
+ selector:
+  matchLabels:
+   name: pong
+ template:
+   metadata:
+    labels:
+     name: pong
+   spec:
+    containers:
+    - name: pongapi
+      image: sanarayaacr.azurecr.io/pongapi:latest
+      volumeMounts:
+        - name: persistent-storage
+          mountPath: "/data"
+          readOnly: false
+    volumes:
+    - name: persistent-storage
+      persistentVolumeClaim:
+        claimName: pvc-azurefile-new

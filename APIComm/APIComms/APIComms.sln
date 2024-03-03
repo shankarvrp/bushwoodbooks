@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34601.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingAPI", "PingAPI\PingAPI.csproj", "{0DE0EEEB-47AD-4AD9-ABBF-2C4D241406CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PongAPI", "PongAPI\PongAPI.csproj", "{FF0BF2E2-7868-46A2-9DD7-B942563AE2AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kubernetes Manifests", "Kubernetes Manifests", "{160DC915-1151-4DF3-BC06-BF37EDE5ECCC}"
+	ProjectSection(SolutionItems) = preProject
+		ping.deploy.yaml = ping.deploy.yaml
+		ping.service.yaml = ping.service.yaml
+		pong.deploy.yaml = pong.deploy.yaml
+		pong.service.yaml = pong.service.yaml
+		pvc-fileshare.yaml = pvc-fileshare.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exec Scripts", "Exec Scripts", "{066644E0-FA1A-42D1-B83C-3AF362AAC138}"
+	ProjectSection(SolutionItems) = preProject
+		K8s-Scripts.txt = K8s-Scripts.txt
+		docker-Scripts.txt = docker-Scripts.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker Manifests", "Docker Manifests", "{B15C5BBD-2D37-4167-815A-A2074186D410}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile.ping = Dockerfile.ping
+		Dockerfile.pong = Dockerfile.pong
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DE0EEEB-47AD-4AD9-ABBF-2C4D241406CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DE0EEEB-47AD-4AD9-ABBF-2C4D241406CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DE0EEEB-47AD-4AD9-ABBF-2C4D241406CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DE0EEEB-47AD-4AD9-ABBF-2C4D241406CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF0BF2E2-7868-46A2-9DD7-B942563AE2AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF0BF2E2-7868-46A2-9DD7-B942563AE2AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF0BF2E2-7868-46A2-9DD7-B942563AE2AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF0BF2E2-7868-46A2-9DD7-B942563AE2AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A50374C-504B-420F-A3CB-9704966DA9EC}
+	EndGlobalSection
+EndGlobal

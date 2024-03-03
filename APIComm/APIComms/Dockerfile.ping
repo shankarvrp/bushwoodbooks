@@ -1,0 +1,7 @@
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+WORKDIR /app
+
+ARG APP_ENV=Prod
+
+COPY PingAPI/Publish/$APP_ENV .
+ENTRYPOINT ["dotnet", "PingAPI.dll"]
